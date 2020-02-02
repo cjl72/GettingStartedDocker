@@ -1,17 +1,24 @@
-from Calculator.Subtraction import subtraction
-from Calculator.Addition import addition
-
-
+import math
 class Calculator:
     result = 0
 
     def __init__(self):
         pass
 
-    def add(self, a, b):
-        self.result = addition(a, b)
-        return self.result
+    def addition(self, a, b):
+        return a + b
 
-    def subtract(self, a, b):
-        self.result = subtraction(a, b)
-        return self.result
+    def subtraction(self, a, b):
+        return a - b
+
+    def multiply(self, a, b):
+        return a * b
+
+    def division(self, a, b):
+        return a / b
+
+    def squareroot(self, a):
+        return math.sqrt(a)
+
+    def square(self, a):
+        return a * a
